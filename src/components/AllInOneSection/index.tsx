@@ -1,29 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Check } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import { sectionVariants, itemVariants } from "../../utils/helpers";
+import List from "./List";
+import CardTakeLesson from "./CardTakeLesson";
+import { CardsTakeLessonTypes } from "../../utils/enums";
 
 const AllInOneSection: React.FC = () => {
-  const sectionVariants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        when: "beforeChildren",
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.5 },
-    },
-  };
-
   return (
     <motion.section
       className="flex flex-col gap-6"
@@ -49,30 +32,52 @@ const AllInOneSection: React.FC = () => {
         suspendisse nec lorem mauris. Pharetra, eu imperdiet ipsum ultrices
         amet, dui sit suspendisse.
       </motion.p>
+      <List
+        listItems={[
+          "Est et in pharetra magna adipiscing ornare aliquam.",
+          "Tellus arcu sed consequat ac velit ut eu blandit.",
+          "Ullamcorper ornare in et egestas dolor orci.",
+        ]}
+      />
       <div className="flex flex-col gap-8 relative">
-        <motion.ul className="flex flex-col gap-4" variants={itemVariants}>
-          <motion.li className="flex gap-2" variants={itemVariants}>
-            <Check className="size-6" />
-            Est et in pharetra magna adipiscing ornare aliquam.
-          </motion.li>
-          <motion.li className="flex gap-2" variants={itemVariants}>
-            <Check className="size-6" />
-            Tellus arcu sed consequat ac velit ut eu blandit.
-          </motion.li>
-          <motion.li className="flex gap-2" variants={itemVariants}>
-            <Check className="size-6" />
-            Ullamcorper ornare in et egestas dolor orci.
-          </motion.li>
-        </motion.ul>
         <motion.button className="flex gap-4 text-center items-center text-blue-600">
           <span className="font-medium">Find more about the app</span>
           <ArrowRight className="size-4" />
         </motion.button>
         <img
           src="/stars.svg"
-          alt=""
+          alt="stars-effect"
           className="w-40 h-[520px] absolute right-1/2"
         />
+      </div>
+      <div className="relative">
+        <motion.div className="flex relative mt-8" variants={itemVariants}>
+          <motion.img
+            src="/desktop.svg"
+            alt="play-video-template"
+            className="absolute top-[-10%]"
+            variants={itemVariants}
+          />
+          <motion.img src="/blob.svg" alt="" className="" />
+        </motion.div>
+        <div className="absolute bottom-[-35%] right-5 flex gap-4">
+          <CardTakeLesson
+            cards={[
+              {
+                type: CardsTakeLessonTypes.FEATURED,
+                title: "The map of mathematics",
+                description:
+                  "Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.",
+              },
+              {
+                type: CardsTakeLessonTypes.POPULAR,
+                title: "Design for how people think",
+                description:
+                  "Aliquam ut euismod condimentum elementum ultricies volutpat sit non. ",
+              },
+            ]}
+          />
+        </div>
       </div>
     </motion.section>
   );
