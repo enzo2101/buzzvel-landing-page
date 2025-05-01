@@ -23,6 +23,33 @@ const itemVariants = {
   },
 };
 
+const studentBubbleVariants = {
+  hidden: { opacity: 0, x: 50 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.5, ease: "easeOut" },
+  },
+};
+
+const teacherBubbleVariants = {
+  hidden: { opacity: 0, x: -50 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.5, ease: "easeOut" },
+  },
+};
+
+const containerVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+
 const StudentsWorldWideSection: React.FC = () => (
   <motion.section
     className="flex flex-col gap-6"
@@ -77,28 +104,61 @@ const StudentsWorldWideSection: React.FC = () => (
       </motion.div>
     </motion.div>
     <div>
-      <div className="flex justify-end relative">
-        <div className="flex flex-col gap-2 absolute left-[25%] items-end">
-          <p className="rounded-2xl rounded-br-sm h-fit px-4 py-2 shadow-sm shadow-black/20 bg-white w-fit">
+      {/* ——— Student side ——— */}
+      <motion.div
+        className="flex justify-end relative mb-10"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+        variants={containerVariants}
+      >
+        <motion.div
+          className="flex flex-col gap-2 absolute left-[25%] items-end"
+          variants={containerVariants}
+        >
+          <motion.p
+            className="rounded-2xl rounded-br-sm px-4 py-2 shadow-sm shadow-black/20 bg-white w-fit"
+            variants={studentBubbleVariants}
+          >
             Nunc, at libero neque
-          </p>
-          <p className="rounded-2xl rounded-br-sm h-fit px-4 py-2 shadow-sm shadow-black/20 bg-white w-fit">
+          </motion.p>
+          <motion.p
+            className="rounded-2xl rounded-br-sm px-4 py-2 shadow-sm shadow-black/20 bg-white w-fit"
+            variants={studentBubbleVariants}
+          >
             Viverra sed
-          </p>
-        </div>
+          </motion.p>
+        </motion.div>
         <img src="/student.svg" alt="student-image" />
-      </div>
-      <div className="flex">
+      </motion.div>
+
+      {/* ——— Teacher side ——— */}
+      <motion.div
+        className="flex relative"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+        variants={containerVariants}
+      >
         <img src="/teacher.svg" alt="teacher-image" />
-        <div className="flex flex-col gap-2 absolute right-[20%] items-start">
-          <p className="rounded-2xl rounded-bl-sm bg-gray-700 h-fit px-4 py-2 text-white">
+        <motion.div
+          className="flex flex-col gap-2 absolute right-[23%] items-start"
+          variants={containerVariants}
+        >
+          <motion.p
+            className="rounded-2xl rounded-bl-sm bg-gray-700 px-4 py-2 text-white w-fit"
+            variants={teacherBubbleVariants}
+          >
             Turpis platea nunc mattis
-          </p>
-          <p className="rounded-2xl rounded-bl-sm bg-gray-700 h-fit px-4 py-2 text-white">
+          </motion.p>
+          <motion.p
+            className="rounded-2xl rounded-bl-sm bg-gray-700 px-4 py-2 text-white w-fit"
+            variants={teacherBubbleVariants}
+          >
             Vitae viverra ut non
-          </p>
-        </div>
-      </div>
+          </motion.p>
+        </motion.div>
+      </motion.div>
     </div>
   </motion.section>
 );
