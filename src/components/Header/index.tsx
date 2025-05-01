@@ -4,10 +4,10 @@ import { Menu } from "lucide-react";
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-white py-6 px-4 md:px-20">
+    <header className="bg-white py-6 md:px-20">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-8">
-          <img src="/logo-colored.svg" alt="Logo" className="h-8" />
+          <img src="/logo-colored.svg" alt="Logo" className="h-9" />
           <ul className="hidden md:flex items-center gap-12 text-gray-700">
             <li className="hover:text-black cursor-pointer">Products</li>
             <li className="hover:text-black cursor-pointer">Solution</li>

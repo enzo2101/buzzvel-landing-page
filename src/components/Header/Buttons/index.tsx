@@ -30,7 +30,6 @@ const Buttons: React.FC<ButtonsProps> = ({ className }) => {
         </span>
         <span className="relative invisible">Log In</span>
       </button>
-      <button className=" hover:cursor-pointer hover:underline"></button>
       <button className="relative overflow-hidden group border-2 rounded-lg py-3 px-7 hover:cursor-pointer">
         <span
           className="
