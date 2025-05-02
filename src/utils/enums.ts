@@ -43,3 +43,8 @@ export const FooterCategoriesMap = {
     REQUEST_DEMO: "Request Demo",
   },
 };
+
+export enum ColorLogo {
+  WHITE = "white",
+  BLACK = "black",
+}

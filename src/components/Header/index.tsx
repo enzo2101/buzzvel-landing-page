@@ -1,13 +1,15 @@
 import React from "react";
 import Buttons from "./Buttons";
 import { Menu } from "lucide-react";
+import Logo from "./Logo";
+import { ColorLogo } from "../../utils/enums";
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-white py-6 md:px-20">
+    <header className="bg-white py-6 md:px-20 px-4">
       <div className="flex items-center justify-between">
-        <div className="flex items-center gap-8">
-          <img src="/logo-colored.svg" alt="Logo" className="h-9" />
+        <div className="flex items-center gap-8 bg-amber-300">
+          <Logo color={ColorLogo.BLACK} />
           <ul className="hidden md:flex items-center gap-12 text-gray-700">
             <li className="hover:text-black cursor-pointer">Products</li>
             <li className="hover:text-black cursor-pointer">Solution</li>

@@ -1,15 +1,17 @@
 import React from "react";
-import { FooterCategories, FooterCategoriesMap } from "../../utils/enums";
+import {
+  ColorLogo,
+  FooterCategories,
+  FooterCategoriesMap,
+} from "../../utils/enums";
 import List from "./List";
 import { Globe, PersonStanding } from "lucide-react";
+import Logo from "../Header/Logo";
 
 const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-900 py-12 px-6">
-      <div className="flex items-center gap-2 mb-8">
-        <img src="/logo.svg" alt="Logo" className="h-8 w-auto" />
-        <h1 className="text-white text-3xl font-bold">teach</h1>
-      </div>
+      <Logo color={ColorLogo.WHITE} className="mb-8" />
       <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-8">
         {Object.values(FooterCategories).map((category) => {
           const linksMap = FooterCategoriesMap[category as FooterCategories];
