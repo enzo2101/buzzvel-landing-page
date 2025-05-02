@@ -7,7 +7,6 @@ interface ReviewsProps {
 
 const Reviews: React.FC<ReviewsProps> = ({ reviews }) => {
   const [emblaRef] = useEmblaCarousel({
-    loop: true,
     align: "start",
     containScroll: "trimSnaps",
   });
@@ -19,9 +18,9 @@ const Reviews: React.FC<ReviewsProps> = ({ reviews }) => {
           {reviews.map(({ review, name, role, image }, index) => (
             <div
               key={index}
-              className="embla__slide flex-[0_0_80%] md:flex-[0_0_40%] bg-white drop-shadow-xl p-6 rounded-lg"
+              className="embla__slide flex-[0_0_80%] md:flex-[0_0_40%] bg-white drop-shadow-xl p-6 rounded-lg lg:max-w-[412px]"
             >
-              <p className="mb-4 text-gray-800">“{review}”</p>
+              <p className="mb-4 text-gray-800">{review}</p>
               <div className="flex items-center gap-3">
                 <img
                   src={image}

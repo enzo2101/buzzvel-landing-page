@@ -22,6 +22,27 @@ const ReviewsSections: React.FC = () => {
             role: "Financial Counselor",
             image: "/hellen-photo.png",
           },
+          {
+            review:
+              "Odio rhoncus ornare ut quam. Molestie vel duis quis scelerisque ut id. In tortor turpis viverra sagittis ultrices nisi, nec tortor. Vestibulum, ultrices ultricies neque, hac ultricies dolor.",
+            name: "Hellen Jummy",
+            role: "Financial Counselor",
+            image: "/hellen-photo.png",
+          },
+          {
+            review:
+              "Odio rhoncus ornare ut quam. Molestie vel duis quis scelerisque ut id. In tortor turpis viverra sagittis ultrices nisi, nec tortor. Vestibulum, ultrices ultricies neque, hac ultricies dolor.",
+            name: "Hellen Jummy",
+            role: "Financial Counselor",
+            image: "/hellen-photo.png",
+          },
+          {
+            review:
+              "Odio rhoncus ornare ut quam. Molestie vel duis quis scelerisque ut id. In tortor turpis viverra sagittis ultrices nisi, nec tortor. Vestibulum, ultrices ultricies neque, hac ultricies dolor.",
+            name: "Hellen Jummy",
+            role: "Financial Counselor",
+            image: "/hellen-photo.png",
+          },
         ]}
       />
     </motion.section>
