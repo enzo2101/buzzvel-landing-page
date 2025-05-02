@@ -1,5 +1,6 @@
 import "./App.css";
 import AllInOneSection from "./components/AllInOneSection";
+import CoolFeatures from "./components/CoolFeatures";
 import Header from "./components/Header";
 import IconstSection from "./components/IconstSection";
 import InternationalStudentsSection from "./components/InternationalStudentsSection";
@@ -9,7 +10,7 @@ import ThirdSection from "./components/ThirdSection";
 
 function App() {
   return (
-    <div className="flex flex-col px-4 gap-12">
+    <div className="flex flex-col gap-12">
       <Header />
       <StudentsWorldWideSection />
       <AllInOneSection />
@@ -17,6 +18,7 @@ function App() {
       <InternationalStudentsSection />
       <IconstSection />
       <ReviewsSections />
+      <CoolFeatures />
     </div>
   );
 }
