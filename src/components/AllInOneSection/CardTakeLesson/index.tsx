@@ -17,8 +17,9 @@ interface CardTakeLessonProps {
 const CardTakeLesson: React.FC<CardTakeLessonProps> = ({ cards }) => {
   return (
     <>
-      {cards.map(({ type, title, description }) => (
+      {cards.map(({ type, title, description }, index) => (
         <motion.div
+          key={index}
           className="bg-white p-4 max-w-40 rounded-[10px] drop-shadow-xl"
           variants={itemVariants}
         >

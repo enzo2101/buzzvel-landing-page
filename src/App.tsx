@@ -3,6 +3,7 @@ import AllInOneSection from "./components/AllInOneSection";
 import Header from "./components/Header";
 import IconstSection from "./components/IconstSection";
 import InternationalStudentsSection from "./components/InternationalStudentsSection";
+import ReviewsSections from "./components/ReviewsSections";
 import StudentsWorldWideSection from "./components/StudentsWorldWideSection";
 import ThirdSection from "./components/ThirdSection";
 
@@ -15,6 +16,7 @@ function App() {
       <ThirdSection />
       <InternationalStudentsSection />
       <IconstSection />
+      <ReviewsSections />
     </div>
   );
 }
