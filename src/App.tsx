@@ -1,6 +1,7 @@
 import "./App.css";
 import AllInOneSection from "./components/AllInOneSection";
 import CoolFeatures from "./components/CoolFeatures";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import IconstSection from "./components/IconstSection";
 import InternationalStudentsSection from "./components/InternationalStudentsSection";
@@ -23,6 +24,7 @@ function App() {
       <CoolFeatures />
       <JoinWorldSection />
       <NextProjectSection />
+      <Footer />
     </div>
   );
 }
