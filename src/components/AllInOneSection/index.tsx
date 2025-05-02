@@ -1,10 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
 import { sectionVariants, itemVariants } from "../../utils/helpers";
 import List from "./List";
 import CardTakeLesson from "./CardTakeLesson";
 import { CardsTakeLessonTypes } from "../../utils/enums";
+import SimpleForwardButton from "../SimpleForwardButton";
 
 const AllInOneSection: React.FC = () => {
   return (
@@ -40,10 +40,7 @@ const AllInOneSection: React.FC = () => {
         ]}
       />
       <div className="flex flex-col gap-8 relative">
-        <motion.button className="flex gap-4 text-center items-center text-blue-600">
-          <span className="font-medium">Find more about the app</span>
-          <ArrowRight className="size-4" />
-        </motion.button>
+        <SimpleForwardButton text="Find more about the app" />
         <img
           src="/stars.svg"
           alt="stars-effect"

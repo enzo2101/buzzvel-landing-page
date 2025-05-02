@@ -1,6 +1,7 @@
 import "./App.css";
 import AllInOneSection from "./components/AllInOneSection";
 import Header from "./components/Header";
+import InternationalStudentsSection from "./components/InternationalStudentsSection";
 import StudentsWorldWideSection from "./components/StudentsWorldWideSection";
 import ThirdSection from "./components/ThirdSection";
 
@@ -11,6 +12,7 @@ function App() {
       <StudentsWorldWideSection />
       <AllInOneSection />
       <ThirdSection />
+      <InternationalStudentsSection />
     </div>
   );
 }
