@@ -104,7 +104,6 @@ const StudentsWorldWideSection: React.FC = () => (
       </motion.div>
     </motion.div>
     <div>
-      {/* ——— Student side ——— */}
       <motion.div
         className="flex justify-end relative mb-10"
         initial="hidden"
@@ -131,8 +130,6 @@ const StudentsWorldWideSection: React.FC = () => (
         </motion.div>
         <img src="/student.svg" alt="student-image" />
       </motion.div>
-
-      {/* ——— Teacher side ——— */}
       <motion.div
         className="flex relative"
         initial="hidden"

@@ -2,6 +2,7 @@ import "./App.css";
 import AllInOneSection from "./components/AllInOneSection";
 import Header from "./components/Header";
 import StudentsWorldWideSection from "./components/StudentsWorldWideSection";
+import ThirdSection from "./components/ThirdSection";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <StudentsWorldWideSection />
       <AllInOneSection />
+      <ThirdSection />
     </div>
   );
 }

@@ -50,7 +50,7 @@ const AllInOneSection: React.FC = () => {
           className="w-40 h-[520px] absolute right-1/2"
         />
       </div>
-      <div className="relative">
+      <div className="relative mb-52">
         <motion.div className="flex relative mt-8" variants={itemVariants}>
           <motion.img
             src="/desktop.svg"
@@ -60,7 +60,7 @@ const AllInOneSection: React.FC = () => {
           />
           <motion.img src="/blob.svg" alt="" className="" />
         </motion.div>
-        <div className="absolute bottom-[-35%] right-5 flex gap-4">
+        <div className="absolute bottom-[-55%] right-5 flex gap-4">
           <CardTakeLesson
             cards={[
               {

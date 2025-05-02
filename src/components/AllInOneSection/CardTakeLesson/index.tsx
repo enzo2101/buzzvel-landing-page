@@ -19,7 +19,7 @@ const CardTakeLesson: React.FC<CardTakeLessonProps> = ({ cards }) => {
     <>
       {cards.map(({ type, title, description }) => (
         <motion.div
-          className="bg-white p-4 max-w-40 rounded-[10px]"
+          className="bg-white p-4 max-w-40 rounded-[10px] drop-shadow-xl"
           variants={itemVariants}
         >
           <div className="flex flex-col gap-6">
