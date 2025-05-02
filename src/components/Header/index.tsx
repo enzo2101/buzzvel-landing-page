@@ -8,7 +8,7 @@ const Header: React.FC = () => {
   return (
     <header className="bg-white py-6 md:px-20 px-4">
       <div className="flex items-center justify-between">
-        <div className="flex items-center gap-8 bg-amber-300">
+        <div className="flex items-center gap-8">
           <Logo color={ColorLogo.BLACK} />
           <ul className="hidden md:flex items-center gap-12 text-gray-700">
             <li className="hover:text-black cursor-pointer">Products</li>

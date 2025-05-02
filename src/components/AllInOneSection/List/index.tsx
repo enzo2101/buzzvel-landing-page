@@ -9,7 +9,7 @@ interface ListProps {
 
 const List: React.FC<ListProps> = ({ listItems }) => {
   return (
-    <motion.ul className="flex flex-col gap-4" variants={itemVariants}>
+    <motion.ul className="flex flex-col gap-4 px-4" variants={itemVariants}>
       {listItems.map((item) => (
         <motion.li key={item} className="flex gap-2" variants={itemVariants}>
           <Check className="size-6" />

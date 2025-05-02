@@ -4,7 +4,7 @@ import Reviews from "./Reviews";
 
 const ReviewsSections: React.FC = () => {
   return (
-    <motion.section>
+    <motion.section className="mt-12 px-4">
       <h1 className="font-bold text-2xl">What everyone says</h1>
       <Reviews
         reviews={[

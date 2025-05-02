@@ -13,7 +13,7 @@ const Reviews: React.FC<ReviewsProps> = ({ reviews }) => {
   });
 
   return (
-    <section className="embla overflow-hidden">
+    <section className="embla overflow-hidden p-5">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container flex gap-6">
           {reviews.map(({ review, name, role, image }, index) => (

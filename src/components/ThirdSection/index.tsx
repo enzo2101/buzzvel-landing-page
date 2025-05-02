@@ -5,7 +5,7 @@ import { itemVariants, sectionVariants } from "../../utils/helpers";
 const ThirdSection: React.FC = () => {
   return (
     <motion.section
-      className="bg-yellow-400 pt-12 flex flex-col h-[684px] overflow-hidden"
+      className="bg-yellow-400 pt-12 flex flex-col h-[684px] overflow-hidden my-12"
       variants={sectionVariants}
       initial="hidden"
       whileInView="visible"
@@ -38,7 +38,7 @@ const ThirdSection: React.FC = () => {
         <motion.img
           src="/third-image.svg"
           alt="student photo"
-          className="mx-auto"
+          className="mx-auto z-50"
           variants={itemVariants}
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}

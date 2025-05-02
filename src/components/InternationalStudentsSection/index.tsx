@@ -3,7 +3,7 @@ import SimpleForwardButton from "../SimpleForwardButton";
 
 const InternationalStudentsSection: React.FC = () => {
   return (
-    <section className="flex flex-col gap-8">
+    <section className="flex flex-col gap-8 px-4 mb-12">
       <div className="flex flex-col gap-6">
         <h1 className="font-bold text-2xl">
           Meet international students & teachers

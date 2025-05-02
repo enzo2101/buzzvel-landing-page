@@ -5,6 +5,7 @@ import SimpleForwardButton from "../SimpleForwardButton";
 
 const CoolFeatures: React.FC = () => (
   <motion.section
+    className="mt-12"
     variants={sectionVariants}
     initial="hidden"
     whileInView="visible"

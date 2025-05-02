@@ -52,7 +52,7 @@ const containerVariants = {
 
 const StudentsWorldWideSection: React.FC = () => (
   <motion.section
-    className="flex flex-col gap-6"
+    className="flex flex-col gap-6 px-4 mb-12"
     variants={sectionVariants}
     initial="hidden"
     whileInView="visible"

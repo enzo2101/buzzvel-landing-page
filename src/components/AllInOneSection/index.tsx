@@ -15,7 +15,7 @@ const AllInOneSection: React.FC = () => {
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
     >
-      <motion.h1 className="text-4xl font-bold">
+      <motion.h1 className="text-4xl font-bold px-4">
         An{" "}
         <span className="relative inline-block">
           <span className="relative z-10">all-in-one</span>
@@ -27,7 +27,7 @@ const AllInOneSection: React.FC = () => {
         </span>{" "}
         app that makes it easier
       </motion.h1>
-      <motion.p variants={itemVariants}>
+      <motion.p variants={itemVariants} className="px-4">
         Sit elit feugiat turpis sed integer integer accumsan turpis. Sed
         suspendisse nec lorem mauris. Pharetra, eu imperdiet ipsum ultrices
         amet, dui sit suspendisse.
@@ -39,7 +39,7 @@ const AllInOneSection: React.FC = () => {
           "Ullamcorper ornare in et egestas dolor orci.",
         ]}
       />
-      <div className="flex flex-col gap-8 relative">
+      <div className="flex flex-col gap-8 relative px-4">
         <SimpleForwardButton text="Find more about the app" />
         <img
           src="/stars.svg"
