@@ -5,13 +5,14 @@ import Header from "./components/Header";
 import IconstSection from "./components/IconstSection";
 import InternationalStudentsSection from "./components/InternationalStudentsSection";
 import JoinWorldSection from "./components/JoinWorldSection";
+import NextProjectSection from "./components/NextProjectSection";
 import ReviewsSections from "./components/ReviewsSections";
 import StudentsWorldWideSection from "./components/StudentsWorldWideSection";
 import ThirdSection from "./components/ThirdSection";
 
 function App() {
   return (
-    <div className="flex flex-col gap-12">
+    <div className="flex flex-col">
       <Header />
       <StudentsWorldWideSection />
       <AllInOneSection />
@@ -21,6 +22,7 @@ function App() {
       <ReviewsSections />
       <CoolFeatures />
       <JoinWorldSection />
+      <NextProjectSection />
     </div>
   );
 }
