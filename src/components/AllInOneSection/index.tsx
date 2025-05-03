@@ -11,7 +11,6 @@ const AllInOneSection: React.FC = () => {
       variants={sectionVariants}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.3 }}
     >
       <div className="flex flex-col gap-6 lg:gap-8">
         <motion.h1 className="text-4xl font-bold px-4 lg:text-5xl lg:max-w-[545px]">

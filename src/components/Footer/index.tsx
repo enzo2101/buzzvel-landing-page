@@ -10,22 +10,24 @@ import Logo from "../Header/Logo";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-900 py-12 px-6">
-      <Logo color={ColorLogo.WHITE} className="mb-8" />
-      <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-8">
-        {Object.values(FooterCategories).map((category) => {
-          const linksMap = FooterCategoriesMap[category as FooterCategories];
-          const links = Object.values(linksMap).map((item) =>
-            typeof item === "string"
-              ? { name: item }
-              : { name: item.name, isBeta: item.isBeta }
-          );
-          return <List key={category} title={category} links={links} />;
-        })}
+    <footer className="bg-gray-900 py-12 px-6 lg:px-20">
+      <div className="lg:grid">
+        <Logo color={ColorLogo.WHITE} className="mb-8" />
+        <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-8">
+          {Object.values(FooterCategories).map((category) => {
+            const linksMap = FooterCategoriesMap[category as FooterCategories];
+            const links = Object.values(linksMap).map((item) =>
+              typeof item === "string"
+                ? { name: item }
+                : { name: item.name, isBeta: item.isBeta }
+            );
+            return <List key={category} title={category} links={links} />;
+          })}
+        </div>
       </div>
-      <div className="border-t border-gray-500 mt-12 py-6 flex flex-col gap-6">
+      <div className="border-t border-gray-500 mt-12 py-6 flex flex-col lg:flex-row lg:justify-between gap-6">
         <p className="text-gray-200">uteach @ 2023. All rights reserved.</p>
-        <ul className="text-gray-200 flex justify-between">
+        <ul className="text-gray-200 flex justify-between lg:justify-end lg:gap-8">
           <li>Terms</li>
           <li>Privacy</li>
           <li className="flex gap-2">

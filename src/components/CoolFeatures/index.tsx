@@ -13,7 +13,6 @@ const CoolFeatures: React.FC = () => {
       variants={sectionVariants}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.3 }}
     >
       <motion.div
         className="flex flex-col gap-6 max-w-3xl mx-auto px-4 lg:px-0 lg:mx-0"
