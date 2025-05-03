@@ -26,7 +26,7 @@ const iconVariants = {
 const Icons: React.FC<IconsProps> = ({ icons }) => {
   return (
     <motion.div
-      className="flex flex-col gap-12 justify-center items-center lg:flex-row"
+      className="flex flex-col gap-12 justify-center items-center lg:justify-evenly w-full lg:flex-row"
       variants={containerVariants}
       initial="hidden"
       animate="visible"

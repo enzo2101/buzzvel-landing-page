@@ -5,7 +5,7 @@ import { sectionVariants, itemVariants } from "../../utils/helpers";
 const NextProjectSection: React.FC = () => {
   return (
     <motion.section
-      className="bg-orange-600 py-12 px-4 text-white flex flex-col gap-8"
+      className="bg-orange-600 py-12 px-4 text-white flex flex-col gap-8 lg:items-center"
       variants={sectionVariants}
       initial="hidden"
       whileInView="visible"
@@ -22,7 +22,10 @@ const NextProjectSection: React.FC = () => {
           Sit elit feugiat turpis sed integer integer accumsan turpis.
         </motion.h2>
       </motion.div>
-      <motion.div className="flex flex-col gap-5" variants={itemVariants}>
+      <motion.div
+        className="flex flex-col gap-5 lg:min-w-[550px]"
+        variants={itemVariants}
+      >
         <label htmlFor="Email" className="text-lg">
           Email
         </label>
@@ -34,7 +37,10 @@ const NextProjectSection: React.FC = () => {
           variants={itemVariants}
         />
       </motion.div>
-      <motion.div className="flex flex-col gap-5" variants={itemVariants}>
+      <motion.div
+        className="flex flex-col gap-5 lg:min-w-[550px]"
+        variants={itemVariants}
+      >
         <label htmlFor="Message" className="text-lg">
           Message
         </label>
