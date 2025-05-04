@@ -18,7 +18,10 @@ const CoolFeatures: React.FC = () => {
         className="flex flex-col gap-6 max-w-3xl mx-auto px-4 lg:px-0 lg:mx-0"
         variants={sectionVariants}
       >
-        <motion.h1 className="text-6xl font-bold" variants={itemVariants}>
+        <motion.h1
+          className="text-2xl lg:text-6xl font-bold"
+          variants={itemVariants}
+        >
           All the cool{" "}
           <span className="relative inline-block">
             <span className="relative z-10">features</span>
