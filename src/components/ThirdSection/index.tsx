@@ -1,8 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { itemVariants, sectionVariants } from "../../utils/helpers";
+import { useMediaQuery } from "react-responsive";
+import { LapTopMediaQuery } from "../../utils/constants";
 
 const ThirdSection: React.FC = () => {
+  const isLapTop = useMediaQuery({ query: LapTopMediaQuery });
+
   return (
     <motion.section
       className="relative bg-yellow-400 pt-12 flex flex-col h-[684px] lg:h-[575px] overflow-visible my-12 lg:flex-row lg:px-20"
@@ -41,18 +45,11 @@ const ThirdSection: React.FC = () => {
       </div>
       <motion.div className="mt-auto" variants={itemVariants}>
         <motion.img
-          src="/third-image2.svg"
+          src={isLapTop ? "/third-image2.svg" : "/third-image.svg"}
           alt="student photo"
-          className="absolute bottom-[-80px] right-40 z-50 hidden lg:block"
-          variants={itemVariants}
-          initial={{ scale: 0.8, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ delay: 0.6, duration: 0.8, type: "spring" }}
-        />
-        <motion.img
-          src="/third-image.svg"
-          alt="student photo"
-          className="mx-auto z-50 lg:hidden"
+          className={
+            isLapTop ? "absolute bottom-[-80px] right-40 z-50" : "mx-auto z-50"
+          }
           variants={itemVariants}
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}

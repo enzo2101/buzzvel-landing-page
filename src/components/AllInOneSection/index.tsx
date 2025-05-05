@@ -3,8 +3,12 @@ import { motion } from "framer-motion";
 import { sectionVariants } from "../../utils/helpers";
 import List from "./List";
 import SimpleForwardButton from "../SimpleForwardButton";
+import { useMediaQuery } from "react-responsive";
+import { LapTopMediaQuery } from "../../utils/constants";
 
 const AllInOneSection: React.FC = () => {
+  const isLapTop = useMediaQuery({ query: LapTopMediaQuery });
+
   return (
     <motion.section
       className="lg:flex lg:items-center lg:justify-between lg:px-20"
@@ -13,7 +17,7 @@ const AllInOneSection: React.FC = () => {
       whileInView="visible"
     >
       <div className="flex flex-col gap-6 lg:gap-8">
-        <motion.h1 className="text-4xl font-bold px-4 lg:text-5xl lg:max-w-[545px]">
+        <motion.h1 className="text-2xl font-bold px-4 lg:text-5xl lg:max-w-[545px]">
           An{" "}
           <span className="relative inline-block">
             <span className="relative z-10">all-in-one</span>
@@ -37,8 +41,10 @@ const AllInOneSection: React.FC = () => {
         </div>
       </div>
       <div className="flex items-center">
-        <img src="/desktop-pc.svg" alt="" className="hidden lg:block" />
-        <img src="/desktop.svg" alt="" className="lg:hidden" />
+        <img
+          src={isLapTop ? "/desktop-pc.svg" : "/desktop.svg"}
+          alt="student playing video"
+        />
       </div>
     </motion.section>
   );

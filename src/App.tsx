@@ -13,19 +13,21 @@ import ThirdSection from "./components/ThirdSection";
 
 function App() {
   return (
-    <div className="flex flex-col">
-      <Header />
-      <StudentsWorldWideSection />
-      <AllInOneSection />
-      <ThirdSection />
-      <InternationalStudentsSection />
-      <IconstSection />
-      <ReviewsSections />
-      <CoolFeatures />
-      <JoinWorldSection />
-      <NextProjectSection />
-      <Footer />
-    </div>
+    <>
+      <div className="flex flex-col">
+        <Header />
+        <StudentsWorldWideSection />
+        <AllInOneSection />
+        <ThirdSection />
+        <InternationalStudentsSection />
+        <IconstSection />
+        <ReviewsSections />
+        <CoolFeatures />
+        <JoinWorldSection />
+        <NextProjectSection />
+        <Footer />
+      </div>
+    </>
   );
 }
 
