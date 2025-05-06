@@ -1,54 +1,66 @@
-# React + TypeScript + Vite
+# 🚀 Buzzvel Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma landing page moderna, responsiva e animada com **React**, **Vite**, **TailwindCSS** e **Framer Motion**. O projeto foca em uma apresentação visual elegante, com seções animadas e componentes reutilizáveis que valorizam a experiência do usuário.
 
-Currently, two official plugins are available:
+## ✨ Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Design moderno e responsivo
+- Animações com Framer Motion
+- Carrossel de depoimentos com Embla Carousel
+- Componentes reutilizáveis com tipagem em TypeScript
+- Layouts otimizados para dispositivos desktop e mobile
 
-## Expanding the ESLint configuration
+## 🧰 Tecnologias Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- [React 19](https://react.dev)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS 4](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [Embla Carousel React](https://www.embla-carousel.com/)
+- [Lucide Icons](https://lucide.dev/)
+- [Vite](https://vitejs.dev/)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🛠️ Instalação
+
+Clone o repositório e instale as dependências:
+
+```bash
+git clone https://github.com/seu-usuario/buzzvel-landing-page.git
+cd buzzvel-landing-page
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## ▶️ Rodando o projeto localmente
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Para rodar o projeto em ambiente de desenvolvimento:
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm run start
 ```
+
+Para construir a versão de produção:
+
+```bash
+npm run build
+```
+
+Para visualizar o build:
+
+```bash
+npm run preview
+```
+
+## 📦 Scripts Disponíveis
+
+- `npm run start` — inicia o ambiente de desenvolvimento com Vite
+- `npm run build` — compila o projeto para produção
+- `npm run preview` — roda um servidor local para pré-visualizar o build
+- `npm run lint` — executa o linter para manter a qualidade do código
+
+## 💡 Possíveis melhorias
+
+- Integração com backend (ex: para envio de formulário)
+- Internacionalização (i18n)
+- Testes automatizados com Cypress ou Playwrite Library
+
+---
