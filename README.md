@@ -25,7 +25,7 @@ Uma landing page moderna, responsiva e animada com **React**, **Vite**, **Tailwi
 Clone o repositório e instale as dependências:
 
 ```bash
-git clone https://github.com/seu-usuario/buzzvel-landing-page.git
+git clone https://github.com/enzo2101/buzzvel-landing-page#
 cd buzzvel-landing-page
 npm install
 ```
@@ -35,27 +35,27 @@ npm install
 Para rodar o projeto em ambiente de desenvolvimento:
 
 ```bash
-npm run start
+pnpm run start
 ```
 
 Para construir a versão de produção:
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 Para visualizar o build:
 
 ```bash
-npm run preview
+pnpm run preview
 ```
 
 ## 📦 Scripts Disponíveis
 
-- `npm run start` — inicia o ambiente de desenvolvimento com Vite
-- `npm run build` — compila o projeto para produção
-- `npm run preview` — roda um servidor local para pré-visualizar o build
-- `npm run lint` — executa o linter para manter a qualidade do código
+- `pnpm run start` — inicia o ambiente de desenvolvimento com Vite
+- `pnpm run build` — compila o projeto para produção
+- `pnpm run preview` — roda um servidor local para pré-visualizar o build
+- `pnpm run lint` — executa o linter para manter a qualidade do código
 
 ## 💡 Possíveis melhorias
 
