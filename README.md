@@ -27,7 +27,7 @@ Clone o repositório e instale as dependências:
 ```bash
 git clone https://github.com/enzo2101/buzzvel-landing-page#
 cd buzzvel-landing-page
-npm install
+pnpm install
 ```
 
 ## ▶️ Rodando o projeto localmente
